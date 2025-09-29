@@ -9,28 +9,12 @@ jobs:
   #
   # Package jobs
   #
-  package-3_9:
+  package-3_13:
     uses: ./.github/workflows/docker.yml
     secrets: inherit
     with:
       name: swift
-      version: '3.9'
-      flavour: slim
-
-  package-3_10:
-    uses: ./.github/workflows/docker.yml
-    secrets: inherit
-    with:
-      name: swift
-      version: '3.10'
-      flavour: slim
-
-  package-3_11:
-    uses: ./.github/workflows/docker.yml
-    secrets: inherit
-    with:
-      name: swift
-      version: '3.11'
+      version: '3.13'
       flavour: slim
 #
 # End Package Jobs
